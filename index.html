@@ -3,59 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Murilo Matos • Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1> 
-            <span id="greeting"></span> I am Murilo!
-        </h1>
-        <P>
-            Welcome to my personal website. Here you can find information about me, my projects, and how to get in touch.
-        </P>
-        <img src="assets/Cat.jpeg" alt="A cute cat" width="200">
-    </header>
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-            I am Murilo, I am passionate about AI and currently working as a research assistant at the Blueberry Breeding Lab at the University of Florida in Machine learning.
-        </p>
-    </section>
-    <section id="Projects">
-        <h2>Projects</h2>
-        <p>
-            Below are some of the projects I have worked on:
-        </p>
-        <div class ="project-cards">
-            <div class="project-card">
-                <h3> Sudoku </h3>
-                <p> A web-based Sudoku game built with Pygame</p>
-            </div>
-            <div class="project-card">
-                <h3> Minesweeper </h3>
-                <p> A web-based Minesweeper game built with Pygame</p>
-            </div>
-            <div class="project-card">
-                <h3> Minecraft </h3>
-                <p> A web-based Minecraft game built with Pygame</p>
-            </div>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="#hero" class="brand">Murilo Matos</a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <span class="social-inline">
+                    <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                </span>
+            </nav>
         </div>
-    </section>
-    <section id="Experiences">
-        <h2>Experiences</h2>
-        <p>
-            Below are some experiences I have had:
-        </p>
-    </section>
+    </header>
 
-    <footer>
-        <h2>
-            Get in touch!!
-        </h2>
-        <div class="contact-buttons">
-            <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" class="contact-btn">LinkedIn</a>
-            <a href="https://github.com/HitMonrillo" target="_blank" class="contact-btn">GitHub</a>
+    <main>
+        <section id="hero" class="hero container">
+            <div class="hero-content">
+                <h1><span id="greeting"></span> I am Murilo.</h1>
+                <p class="subtitle">Machine Learning Engineer • Research Assistant @ UF Blueberry Breeding Lab</p>
+                <p class="intro">I build AI-driven solutions that turn data into decisions. I enjoy computer vision, deep learning, and deploying models that work in the real world.</p>
+                <div class="cta-row">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="assets/LinkedIn Headshot.JPG" alt="Headshot of Murilo Matos" class="hero-headshot">
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <h2>About</h2>
+            <p>
+                I'm Murilo, passionate about AI and robotics. Currently, I work in Machine Learning at the University of Florida's Blueberry Breeding Lab, where I apply computer vision and statistical learning to support agricultural research. I enjoy building end-to-end ML systems—from data pipelines to model deployment—and collaborating across disciplines to solve real problems.
+            </p>
+        </section>
+
+        <section id="experience" class="section container">
+            <h2>Experience</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Research Assistant, Machine Learning — University of Florida</h3>
+                        <p class="meta">Blueberry Breeding Lab • Present</p>
+                        <ul>
+                            <li>Applied computer vision and ML to phenotype and analyze crop data.</li>
+                            <li>Built data processing pipelines and model evaluation tooling.</li>
+                            <li>Collaborated with researchers to translate insights into action.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Projects and Freelance</h3>
+                        <p class="meta">2019 — Present</p>
+                        <ul>
+                            <li>Developed interactive games and ML demos to learn new frameworks.</li>
+                            <li>Explored deep learning, data viz, and web deployment workflows.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><span>Python</span><div class="meter"><span style="width: 90%"></span></div></div>
+                <div class="skill"><span>TensorFlow</span><div class="meter"><span style="width: 80%"></span></div></div>
+                <div class="skill"><span>PyTorch</span><div class="meter"><span style="width: 75%"></span></div></div>
+                <div class="skill"><span>Computer Vision</span><div class="meter"><span style="width: 80%"></span></div></div>
+                <div class="skill"><span>JavaScript</span><div class="meter"><span style="width: 70%"></span></div></div>
+                <div class="skill"><span>React</span><div class="meter"><span style="width: 70%"></span></div></div>
+                <div class="skill"><span>SQL</span><div class="meter"><span style="width: 65%"></span></div></div>
+                <div class="skill"><span>GCP</span><div class="meter"><span style="width: 60%"></span></div></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Sudoku</h3>
+                    <p>A classic Sudoku built with Pygame, focusing on algorithmic generation and validation.</p>
+                    <div class="card-actions">
+                        <a class="btn btn-link" href="#contact">Learn more</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Minesweeper</h3>
+                    <p>An interactive Minesweeper clone demonstrating state management and UX polish.</p>
+                    <div class="card-actions">
+                        <a class="btn btn-link" href="#contact">Learn more</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <h3>Minecraft (Demo)</h3>
+                    <p>A lightweight voxel world experiment exploring rendering and input handling.</p>
+                    <div class="card-actions">
+                        <a class="btn btn-link" href="#contact">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contact</h2>
+            <p>If you have an opportunity or just want to say hi, drop me a message.</p>
+            <form id="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <span class="error" id="error-name"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    <span class="error" id="error-email"></span>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+                    <span class="error" id="error-message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Murilo Matos</p>
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" class="contact-btn">GitHub</a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
