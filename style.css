@@ -16,6 +16,9 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	scroll-padding-top: 72px;
+	overscroll-behavior-y: contain;
 }
 
 body {
@@ -44,6 +47,11 @@ main {
 
 .section {
 	padding: 64px 0;
+	min-height: calc(100vh - 72px);
+	display: grid;
+	align-content: center;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 h1, h2, h3 {
@@ -140,6 +148,9 @@ h2::after {
 	gap: 40px;
 	align-items: center;
 	padding: 56px 0 24px;
+	min-height: calc(100vh - 72px);
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 .hero .subtitle {
