@@ -1,7 +1,13 @@
+import { inject } from '@vercel/analytics';
+
 import { Input } from './input';
 import { SPAWN, isWalkable, targetFor, type TargetId } from './level';
 import { Panels } from './panels';
 import { Renderer, castCentreRay, type Player } from './raycaster';
+
+// Vercel Web Analytics. The endpoint only exists on Vercel, so this is a
+// no-op locally rather than an error.
+inject();
 
 const MOVE_SPEED = 3.2; // grid cells per second
 const TURN_SPEED = 2.4; // radians per second, keyboard turning

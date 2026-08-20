@@ -1,4 +1,10 @@
 node_modules/
 dist/
+
+# Deliberately not committed. A lockfile generated on macOS records only
+# darwin binaries for rollup/esbuild, and npm then fails to install the
+# linux ones on Vercel (npm/cli#4828). Direct dependency versions are
+# pinned exactly in package.json instead.
+package-lock.json
 .DS_Store
 *.log

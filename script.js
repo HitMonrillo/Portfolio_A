@@ -1,3 +1,9 @@
+import { inject } from '@vercel/analytics';
+
+// Vercel Web Analytics. The endpoint only exists on Vercel, so this is a
+// no-op locally rather than an error.
+inject();
+
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
