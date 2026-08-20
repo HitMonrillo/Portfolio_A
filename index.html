@@ -1,164 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murilo Matos • Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murilo Matos — Software Engineer</title>
+<meta name="description" content="Murilo Matos — software engineer working across backend services, machine learning, and data pipelines. CS at the University of Florida.">
+<meta name="theme-color" content="#fbfaf5">
+
+<meta property="og:title" content="Murilo Matos — Software Engineer">
+<meta property="og:description" content="Backend services, machine learning, and data pipelines. CS at the University of Florida.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container nav">
-            <a href="#hero" class="brand">Murilo Matos</a>
-            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="nav-links" aria-label="Primary">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <span class="social-inline">
-                    <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-                </span>
-            </nav>
-        </div>
-    </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <section id="hero" class="hero container">
-            <div class="hero-content">
-                <h1><span id="greeting"></span> I am Murilo.</h1>
-                <p class="subtitle">Machine Learning Engineer • Research Assistant @ UF Blueberry Breeding Lab</p>
-                <p class="intro">I build AI-driven solutions that turn data into decisions. I enjoy computer vision, deep learning, and deploying models that work in the real world.</p>
-                <div class="cta-row">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-                <div class="social-row">
-                    <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" class="social-link">GitHub</a>
-                </div>
-            </div>
-            <div class="hero-media">
-                <img src="assets/LinkedIn Headshot.JPG" alt="Headshot of Murilo Matos" class="hero-headshot">
-            </div>
-        </section>
+<header class="site-header">
+    <div class="wrap header-inner">
+        <a href="#top" class="brand">Murilo Matos</a>
 
-        <section id="about" class="section container">
-            <h2>About</h2>
-            <p>
-                I'm Murilo, passionate about AI and Software Engineering. Currently, I work in Machine Learning at the University of Florida's Blueberry Breeding Lab, where I apply computer vision and statistical learning to support agricultural research. I enjoy touching grass, and doing some exercise like running or boxing every now an then.
-            </p>
-        </section>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
 
-        <section id="experience" class="section container">
-            <h2>Experience</h2>
-            <ul class="timeline">
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Research Assistant, Machine Learning — University of Florida</h3>
-                        <p class="meta">Blueberry Breeding Lab • Present</p>
-                        <ul>
-                            <li>Applied computer vision and ML to phenotype and analyze crop data.</li>
-                            <li>Built data processing pipelines and model evaluation tooling.</li>
-                            <li>Collaborated with researchers to translate insights into action.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Projects and Freelance</h3>
-                        <p class="meta">2019 — Present</p>
-                        <ul>
-                            <li>Developed interactive games and ML demos to learn new frameworks.</li>
-                            <li>Explored deep learning, data viz, and web deployment workflows.</li>
-                        </ul>
-                    </div>
-                </li>
+        <nav id="primary-nav" class="nav" aria-label="Primary">
+            <ul class="nav-pill">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="doom/index.html" class="nav-play">Play&nbsp;Mode</a></li>
             </ul>
-        </section>
+            <a class="mail-pill" href="mailto:murilo.matos1210@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z"/><path d="m4 7 8 6 8-6"/></svg>
+                <span>murilo.matos1210@gmail.com</span>
+            </a>
+        </nav>
+    </div>
+</header>
 
-        <section id="skills" class="section container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill"><span>Python</span><div class="meter"><span style="width: 90%"></span></div></div>
-                <div class="skill"><span>TensorFlow</span><div class="meter"><span style="width: 80%"></span></div></div>
-                <div class="skill"><span>PyTorch</span><div class="meter"><span style="width: 75%"></span></div></div>
-                <div class="skill"><span>Computer Vision</span><div class="meter"><span style="width: 80%"></span></div></div>
-                <div class="skill"><span>JavaScript</span><div class="meter"><span style="width: 70%"></span></div></div>
-                <div class="skill"><span>React</span><div class="meter"><span style="width: 70%"></span></div></div>
-                <div class="skill"><span>SQL</span><div class="meter"><span style="width: 65%"></span></div></div>
-                <div class="skill"><span>GCP</span><div class="meter"><span style="width: 60%"></span></div></div>
-            </div>
-        </section>
+<main id="main">
 
-        <section id="projects" class="section container">
-            <h2>Projects</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Sudoku</h3>
-                    <p>A classic Sudoku built with Pygame, focusing on algorithmic generation and validation.</p>
-                    <div class="card-actions">
-                        <a class="btn btn-link" href="#contact">Learn more</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <h3>Minesweeper</h3>
-                    <p>An interactive Minesweeper clone demonstrating state management and UX polish.</p>
-                    <div class="card-actions">
-                        <a class="btn btn-link" href="#contact">Learn more</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <h3>Minecraft (Demo)</h3>
-                    <p>A lightweight voxel world experiment exploring rendering and input handling.</p>
-                    <div class="card-actions">
-                        <a class="btn btn-link" href="#contact">Learn more</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="section container">
-            <h2>Contact</h2>
-            <p>If you have an opportunity or just want to say hi, drop me a message.</p>
-            <form id="contact-form" novalidate>
-                <div class="form-row">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                    <span class="error" id="error-name"></span>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
-                    <span class="error" id="error-email"></span>
-                </div>
-                <div class="form-row">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
-                    <span class="error" id="error-message"></span>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© <span id="year"></span> Murilo Matos</p>
-            <div class="contact-buttons">
-                <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" class="contact-btn">LinkedIn</a>
-                <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener" class="contact-btn">GitHub</a>
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero wrap">
+        <div class="hero-text">
+            <p class="eyebrow">Software Engineer</p>
+            <h1>Murilo<br>Matos</h1>
+            <p class="lede">
+                Computer Science student at the University of Florida, building backend
+                services, machine learning models, and the data pipelines that feed them.
+                Most recently a software engineering intern at BTG&nbsp;Pactual in São&nbsp;Paulo.
+            </p>
+            <div class="cta-row">
+                <a class="btn btn-accent" href="#contact">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
+                    Get in Touch
+                </a>
+                <a class="btn-icon" href="https://github.com/HitMonrillo" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a class="btn-icon" href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/><path d="M3 9h4v12H3z"/><path d="M10 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.75-2C21 8.7 22 11 22 14.1V21h-4v-6.1c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21h-4z"/></svg>
+                </a>
             </div>
         </div>
-    </footer>
-    <script src="script.js"></script>
+
+        <div class="hero-media">
+            <img src="assets/headshot.jpg" width="900" height="900"
+                 alt="Portrait of Murilo Matos" class="headshot">
+        </div>
+    </section>
+
+    <hr class="rule wrap">
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section wrap">
+        <p class="eyebrow">About</p>
+        <div class="split">
+            <h2>Systems that hold up<br>after you ship them.</h2>
+            <div class="split-body">
+                <p>
+                    I'm a Computer Science student at the University of Florida who likes the
+                    unglamorous half of software: the validation, the monitoring, the tests that
+                    catch a bad release before a client does. A reporting tool I built for an
+                    agriculture client has run in production for over 18 months and more than
+                    600 reports without me touching it.
+                </p>
+                <p>
+                    My work spans backend services in C#, Go, and Python; computer vision research
+                    at UF's Blueberry Breeding Lab; and data pipelines that turn messy sources into
+                    something a person can actually read. I'm bilingual in English and Portuguese,
+                    and I studied abroad at ZHAW in Switzerland.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="rule wrap">
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section wrap">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked.</h2>
+
+        <ol class="exp-list">
+            <li class="exp-item card tint-blue">
+                <div class="exp-head">
+                    <h3>Software Engineering Intern</h3>
+                    <span class="exp-date">Jun&ndash;Aug 2026</span>
+                </div>
+                <p class="exp-org">BTG Pactual &middot; São Paulo, Brazil</p>
+                <p>
+                    Built a production backend service in C#/.NET for an internal platform managing
+                    the firm's financial positions, using MongoDB for persistence and RabbitMQ for
+                    asynchronous messaging. Designed a dynamic factory interface that lets new
+                    position types be added without modifying existing code.
+                </p>
+                <ul class="tags">
+                    <li>C#/.NET</li><li>MongoDB</li><li>RabbitMQ</li>
+                </ul>
+            </li>
+
+            <li class="exp-item card">
+                <div class="exp-head">
+                    <h3>Student Developer</h3>
+                    <span class="exp-date">Jan 2026 &ndash; Present</span>
+                </div>
+                <p class="exp-org">The Agency &middot; University of Florida</p>
+                <p>
+                    Ship full-stack features within an Agile team &mdash; Go backend, RESTful APIs,
+                    React front-end, SQL on AWS &mdash; maintaining reliability through automated
+                    testing, debugging, and code review.
+                </p>
+                <ul class="tags">
+                    <li>Go</li><li>React</li><li>REST</li><li>AWS</li>
+                </ul>
+            </li>
+
+            <li class="exp-item card tint-orange">
+                <div class="exp-head">
+                    <h3>Machine Learning Research Assistant</h3>
+                    <span class="exp-date">2024 &ndash; Present</span>
+                </div>
+                <p class="exp-org">Blueberry Breeding Lab &middot; University of Florida</p>
+                <p>
+                    Two years of applied ML research: building computer vision models, curating
+                    datasets, designing evaluation methods, and communicating findings to
+                    collaborators across technical and non-technical backgrounds.
+                </p>
+                <ul class="tags">
+                    <li>PyTorch</li><li>OpenCV</li><li>Research</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <hr class="rule wrap">
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section wrap">
+        <p class="eyebrow">Projects</p>
+        <h2>Things I've built.</h2>
+
+        <div class="grid">
+            <article class="card tint-orange proj proj-featured">
+                <p class="proj-meta">System Design &middot; 2026 &middot; Featured</p>
+                <h3>UF Academic Calendar, Regenerated</h3>
+                <p>
+                    UF used to publish its academic calendar as a static graphic &mdash; a
+                    color-coded, week-by-week grid of class days, exams, holidays, and deadlines.
+                    When the university stopped producing it, I designed a system to recreate and
+                    maintain it automatically. A scraper parses UF's official dates-and-deadlines
+                    catalog into structured events, a Postgres database stores them with diffing
+                    logic so the calendar updates whenever UF revises a date, and a React front-end
+                    renders it back into the original format &mdash; orange bars for class days,
+                    navy for exam periods, dashed underlines for drop/add &mdash; using CSS Grid so
+                    any semester regenerates without manual redesign.
+                </p>
+                <ul class="tags">
+                    <li>Python</li><li>BeautifulSoup</li><li>PostgreSQL</li><li>Supabase</li>
+                    <li>React</li><li>Next.js</li><li>CSS Grid</li><li>Vercel Cron</li>
+                </ul>
+            </article>
+
+            <article class="card tint-blue proj">
+                <p class="proj-meta">Hackathon &middot; 2025</p>
+                <h3>Clinix &mdash; AI Agent with RAG</h3>
+                <p>
+                    A full-stack AI agent integrating an LLM with schema-validated tool-calling
+                    (Pydantic) to run multi-step workflows against external tools and data.
+                    Implemented retrieval-augmented generation over text embeddings and a vector
+                    database, plus guardrails and retry/backoff handling. Designed an automated
+                    evaluation harness that measures output accuracy against defined thresholds
+                    using smoke tests and API-contract checks, catching failures before release.
+                    Built and deployed by a 3-person team.
+                </p>
+                <ul class="tags">
+                    <li>Python</li><li>FastAPI</li><li>React</li><li>OpenAI API</li><li>RAG</li>
+                </ul>
+            </article>
+
+            <article class="card proj">
+                <p class="proj-meta">Freelance &middot; Apr 2024 &ndash; Oct 2025</p>
+                <h3>Fertigation Report Automation</h3>
+                <p>
+                    I identified an operational bottleneck for an agriculture client and designed,
+                    built, and shipped a Python automation tool with data validation, cutting a
+                    manual reporting process from about an hour to under five minutes. Owned the
+                    system end-to-end as sole developer, sustaining 18+ months of production
+                    reliability across 600+ reports a year through monitoring, defect tracking, and
+                    documentation written for a non-technical client.
+                </p>
+                <ul class="tags">
+                    <li>Python</li><li>Data validation</li><li>Automation</li>
+                </ul>
+            </article>
+
+            <article class="card tint-orange proj">
+                <p class="proj-meta">Research &middot; 2024 &ndash; Present</p>
+                <h3>Blueberry Crunchiness Classifier</h3>
+                <p>
+                    A binary image classification model distinguishing crunchy from non-crunchy
+                    blueberries, achieving 90%+ accuracy. Curated and labeled a dataset of 3,000+
+                    image records, trained convolutional neural networks, and benchmarked results
+                    against baselines with failure-case analysis. Part of ongoing machine learning
+                    research at the Blueberry Breeding Lab.
+                </p>
+                <ul class="tags">
+                    <li>Python</li><li>PyTorch</li><li>OpenCV</li><li>CNNs</li>
+                </ul>
+            </article>
+
+            <article class="card tint-blue proj">
+                <p class="proj-meta">Research &middot; 2024</p>
+                <h3>Plant Phenotyping Analytics Dashboard</h3>
+                <p>
+                    Data-analysis and dashboard tooling that transforms raw experimental
+                    measurements into structured summaries and visualizations, surfacing trends and
+                    metrics to support research decisions.
+                </p>
+                <ul class="tags">
+                    <li>Python</li><li>Data viz</li><li>Dashboards</li>
+                </ul>
+            </article>
+
+            <article class="card proj">
+                <p class="proj-meta">Course Project &middot; 2026</p>
+                <h3>Scrabble Word Finder &mdash; Trie vs. Min-Heap</h3>
+                <p>
+                    Designed and implemented two data-structure approaches to word-finding, then
+                    quantified their trade-offs through time and space complexity analysis on large
+                    inputs to select the optimal approach. Built with a 3-person team.
+                </p>
+                <ul class="tags">
+                    <li>C++</li><li>Tries</li><li>Heaps</li><li>Benchmarking</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <hr class="rule wrap">
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section wrap">
+        <p class="eyebrow">Skills</p>
+        <h2>What I work with.</h2>
+
+        <div class="grid grid-skills">
+            <article class="card tint-blue skill">
+                <h3>Languages</h3>
+                <ul class="tags">
+                    <li>Python</li><li>C#</li><li>Go</li><li>Java</li><li>C++</li>
+                    <li>JavaScript/TypeScript</li><li>SQL</li><li>Bash</li>
+                </ul>
+            </article>
+
+            <article class="card tint-orange skill">
+                <h3>AI &amp; Machine Learning</h3>
+                <ul class="tags">
+                    <li>PyTorch</li><li>scikit-learn</li><li>OpenCV</li><li>LLMs (OpenAI API)</li>
+                    <li>RAG</li><li>Prompt engineering</li><li>Agents &amp; tool-calling</li>
+                    <li>Evaluation harnesses</li>
+                </ul>
+            </article>
+
+            <article class="card skill">
+                <h3>Backend &amp; Web</h3>
+                <ul class="tags">
+                    <li>RESTful APIs</li><li>FastAPI</li><li>React</li><li>Next.js</li>
+                    <li>RabbitMQ</li><li>.NET</li>
+                </ul>
+            </article>
+
+            <article class="card tint-blue skill">
+                <h3>Data &amp; Databases</h3>
+                <ul class="tags">
+                    <li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Data pipelines</li>
+                    <li>Data validation</li><li>Dashboards</li>
+                </ul>
+            </article>
+
+            <article class="card tint-orange skill">
+                <h3>Cloud &amp; DevOps</h3>
+                <ul class="tags">
+                    <li>AWS (S3, EC2, RDS)</li><li>Docker</li><li>Kubernetes</li><li>Linux</li>
+                    <li>CI/CD</li><li>Git/GitHub</li>
+                </ul>
+            </article>
+
+            <article class="card skill">
+                <h3>Foundations</h3>
+                <ul class="tags">
+                    <li>Data structures &amp; algorithms</li><li>Computer architecture</li>
+                    <li>Object-oriented design</li><li>Design patterns</li>
+                    <li>Complexity analysis</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <hr class="rule wrap">
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section wrap">
+        <p class="eyebrow">Contact</p>
+        <div class="contact-row">
+            <h2>Let's build<br>something solid.</h2>
+            <div class="contact-actions">
+                <a class="btn btn-accent" href="mailto:murilo.matos1210@gmail.com">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z"/><path d="m4 7 8 6 8-6"/></svg>
+                    murilo.matos1210@gmail.com
+                </a>
+                <div class="contact-secondary">
+                    <a class="btn btn-plain" href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn btn-plain" href="https://github.com/HitMonrillo" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="wrap footer-inner">
+        <p>&copy; <span id="year"></span> Murilo Matos.</p>
+        <p><a href="doom/index.html">Play Mode &rarr;</a></p>
+    </div>
+</footer>
+
+<script type="module" src="script.js"></script>
 </body>
 </html>

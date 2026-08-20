@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Play Mode • Murilo Matos</title>
+<meta name="description" content="An interactive, first-person way to browse Murilo Matos' portfolio. Shoot a sign to open that section.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="arena-header">
+    <a class="back" href="../index.html">&larr; Back to the portfolio</a>
+    <p class="controls">
+        <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move &middot;
+        mouse look &middot; click or <kbd>Space</kbd> to shoot a sign
+    </p>
+</header>
+
+<div id="stage">
+    <canvas id="view"></canvas>
+
+    <div id="crosshair" aria-hidden="true"></div>
+    <p id="hint" hidden></p>
+
+    <div id="lock-prompt">
+        <h1>Shoot a sign to read that section</h1>
+        <p>Click to take control. Press <kbd>Esc</kbd> to release the mouse at any time.</p>
+    </div>
+
+    <div id="touch-notice" hidden>
+        <h1>This one needs a keyboard</h1>
+        <p>The arena is built around mouse look and <kbd>WASD</kbd>. Everything in it is on the main site too.</p>
+        <a class="btn" href="../index.html">Read the portfolio instead</a>
+    </div>
+</div>
+
+<div id="panel-overlay" hidden>
+
+    <article class="panel" data-panel="experience" hidden>
+        <button class="close" data-close aria-label="Close">&times;</button>
+        <h2>Experience</h2>
+
+        <section>
+            <h3>Software Engineering Intern &mdash; BTG Pactual</h3>
+            <p class="meta">São Paulo, Brazil &middot; Jun&ndash;Aug 2026</p>
+            <p>Production backend service in C#/.NET for an internal platform managing the firm's financial positions, with MongoDB persistence and RabbitMQ messaging. Designed a dynamic factory interface so new position types can be added without modifying existing code.</p>
+        </section>
+
+        <section>
+            <h3>Student Developer &mdash; The Agency</h3>
+            <p class="meta">University of Florida &middot; Jan 2026 &ndash; Present</p>
+            <p>Full-stack features on an Agile team: Go backend, RESTful APIs, React front-end, SQL on AWS, kept reliable through automated testing and code review.</p>
+        </section>
+
+        <section>
+            <h3>Machine Learning Research Assistant</h3>
+            <p class="meta">Blueberry Breeding Lab, UF &middot; 2024 &ndash; Present</p>
+            <p>Two years of applied ML research: computer vision models, dataset curation, evaluation design, and communicating findings to technical and non-technical collaborators.</p>
+        </section>
+
+        <a class="more" href="../index.html#experience">Full experience on the main site &rarr;</a>
+    </article>
+
+    <article class="panel" data-panel="projects" hidden>
+        <button class="close" data-close aria-label="Close">&times;</button>
+        <h2>Projects</h2>
+
+        <section>
+            <h3>UF Academic Calendar, Regenerated</h3>
+            <p>A scraper parses UF's dates-and-deadlines catalog into structured events, Postgres stores them with diffing logic, and a React/CSS Grid front-end rebuilds the color-coded semester calendar UF stopped publishing.</p>
+        </section>
+
+        <section>
+            <h3>Clinix &mdash; AI Agent with RAG</h3>
+            <p>Full-stack AI agent with schema-validated tool-calling, retrieval-augmented generation over a vector database, guardrails, and an automated evaluation harness that catches regressions before release.</p>
+        </section>
+
+        <section>
+            <h3>Fertigation Report Automation</h3>
+            <p>Python automation that cut an agriculture client's hour-long reporting process to under five minutes, and has run in production for 18+ months across 600+ reports a year.</p>
+        </section>
+
+        <section>
+            <h3>Blueberry Crunchiness Classifier</h3>
+            <p>CNN image classifier at 90%+ accuracy over a hand-curated 3,000+ image dataset, benchmarked against baselines with failure-case analysis.</p>
+        </section>
+
+        <section>
+            <h3>This arena</h3>
+            <p>A raycasting engine in TypeScript &mdash; DDA wall casting, pointer-lock mouse look, and a hitscan ray that maps wall IDs to portfolio sections. No game engine, no dependencies.</p>
+        </section>
+
+        <a class="more" href="../index.html#projects">All six projects on the main site &rarr;</a>
+    </article>
+
+    <article class="panel" data-panel="about" hidden>
+        <button class="close" data-close aria-label="Close">&times;</button>
+        <h2>About</h2>
+        <p>I'm a Computer Science student at the University of Florida who likes the unglamorous half of software: the validation, the monitoring, the tests that catch a bad release before a client does.</p>
+        <p>My work spans backend services in C#, Go, and Python; computer vision research at UF's Blueberry Breeding Lab; and data pipelines that turn messy sources into something a person can actually read. Bilingual in English and Portuguese; studied abroad at ZHAW, Switzerland.</p>
+
+        <h3>Skills</h3>
+        <p class="tags">Python &middot; C# &middot; Go &middot; C++ &middot; TypeScript &middot; SQL &middot; PyTorch &middot; OpenCV &middot; FastAPI &middot; React &middot; PostgreSQL &middot; MongoDB &middot; AWS &middot; Docker</p>
+
+        <a class="more" href="../index.html#about">More on the main site &rarr;</a>
+    </article>
+
+    <article class="panel" data-panel="contact" hidden>
+        <button class="close" data-close aria-label="Close">&times;</button>
+        <h2>Contact</h2>
+        <p>If you have an opportunity or just want to say hi, get in touch.</p>
+        <p class="links">
+            <a href="mailto:murilo.matos1210@gmail.com">murilo.matos1210@gmail.com</a>
+            <a href="https://www.linkedin.com/in/murilomatos/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/HitMonrillo" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <a class="more" href="../index.html#contact">Contact details on the main site &rarr;</a>
+    </article>
+
+</div>
+
+<script type="module" src="./src/main.ts"></script>
+</body>
+</html>
